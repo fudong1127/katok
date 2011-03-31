@@ -1,0 +1,31 @@
+#wrap_div{float:left;text-align:left;overflow:hidden;margin-bottom:10px;}
+#blogSliderWrap{ width: 280px; margin: 10px auto;background:#000000 url(images/tab_bg.jpg) left bottom repeat-x;padding-bottom: 30px; position: relative; }
+#blogSlider{ padding: 25px 0px 0px 0px; width: 280px;background:#000000; }
+.stripViewer{ position: relative; overflow: hidden; clear: both; }
+.stripViewer .panelContainer{ position: relative; left: 0px; top: 0px; }
+.stripViewer .panelContainer .panel { float: left; position: relative; width: 280px; }
+.stripNav{ position: relative; top:5px; z-index: 99;width: 280px;left:15px; }
+.wrapper_sidebar{ padding:0px; }
+.innerWrap{ width: 280px; overflow: hidden; padding:0px;margin:0px; background:url(images/sidebar_art.png) bottom center no-repeat;padding-bottom:30px;margin-bottom:15px;}
+#push{ height: 35px;}
+.stripNav ul li{ float: left;margin-right:5px; }
+.stripNav li a{display: block; height: 18px; text-indent: -9999px; }
+.stripNav li.tab1 a {color:#fff; background: url(images/wordpress_but.jpg) top center no-repeat; width: 80px; height:34px; }
+.stripNav li.tab2 a { background: url(images/jquery_but.jpg) top center no-repeat; width: 80px; height:34px;}
+.stripNav li.tab3 a { background: url(images/toppost_but.jpg) top center no-repeat; width: 80px; height:34px;}
+.stripNav li a:hover,.stripNav li a:active,.stripNav li a:focus{ }
+.stripNav li.tab1 a:hover{background-position:bottom left;}
+.stripNav li.tab2 a:hover{background-position:bottom left;}
+.stripNav li.tab3 a:hover{background-position:bottom left;}
+.stripNav li.tab1 a.current { background-position:bottom left; }
+.stripNav li.tab2 a.current { background-position:bottom left;}
+.stripNav li.tab3 a.current { background-position:bottom left; }
+.stripNavL a, .stripNavR a 			{ display: block; position: absolute; width: 92px;height: 30px; text-indent: -9999px; }
+.stripNavL a						{ bottom: 35px; left: 45px; background: url(images/previous_normal.png); }
+.stripNavR a 						{ bottom: 35px; right: 45px; background: url(images/next_normal.png);}
+.stripNavL a:hover						{background: url(images/previous_mouseover.png); }
+.stripNavR a:hover 						{background: url(images/next_mouseover.png);}
+.panel ul 							{ width: 260px; padding:0px 10px 0px 10px;margin:0px;list-style:none;}
+.panel ul li{padding:0px;margin:0px;}
+.panel ul li a{ color: #cccccc;display: block; padding: 7px 10px;background:#333333;margin-bottom:5px;}
+.panel ul li a:hover 		{ background:#A0A0A0; color: #000000;text-decoration:none; }

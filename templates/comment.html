@@ -1,0 +1,33 @@
+{% include 'header.html' %}
+ <!-- Content All Starts-->  
+ 
+ <div id="content_all">
+
+<p>  <font color="#ffffff"> На данной странице отзывы о Ледовом катке на Проспекте: </font> </p>
+ 
+   
+    {% for Record in comments %}
+       <p> Отзыв № {{ Record.id }}. Оставил посетитель - {{ Record.name }}<br>  {{ Record.text  }} </p>
+		{% empty %}
+           <p>Никто еще не оставлял комментариев</p>
+        {% endfor %}
+ 		<hr>
+	      	
+    {% if form.errors %}
+        <p style="color: red;">
+            Пожалуйста, исправьте ошибки ниже.
+        </p>
+    {% endif %}
+
+    <form action="./" method="post"> {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <input type="submit" value="Отправить">
+    </form>
+   
+    <div style="height: 230px"> </div>
+ </div>
+ 
+<!-- Content All Ends--> 
+{% include 'footer.html' %}

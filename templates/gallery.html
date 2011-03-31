@@ -1,0 +1,32 @@
+{% include 'header.html' %} 
+ <!-- Content All Starts-->  
+
+{% block content %}
+    <div class="span-19 last" id="gallery">
+  
+        <div class="span-19 last">
+            {% load thumbnail %}
+            {% for gal in page.object_list %}
+                <div class="one_gallery">
+                    <h2> {{gal.name }} </h2>
+                    <h3> Создан {{gal.date_created|date:"d.m.Y"}} </h3>
+                    <div class="gcontainer">
+                        {% for foto in gal.foto_set.all %}
+                        <a class="pics" href="/media/{{foto.foto}}"> <img src="{% thumbnail foto.foto 150x150 %}" alt="{{foto.comment}}" /> </a>
+                        {% empty %}
+                        В этой галерее нет фотографий
+                        {% endfor %}
+                    </div>
+                </div>                
+            {% empty %}
+                Фотографии еще не добавлены
+            {% endfor %}
+
+        </div>
+    </div>
+	
+{% endblock %}
+
+  <div style="padding: 230px"> </div>
+
+{% include 'footer.html' %}

@@ -1,0 +1,7 @@
+<uwsgi>
+    <socket>127.0.0.1:8010</socket>
+    <env>DJANGO_SETTINGS_MODULE=katok.settings</env>
+    <module>django.core.handlers.wsgi:WSGIHandler()</module>
+    <pythonpath>/home/ildus/katok_/</pythonpath>
+    <pythonpath>/home/ildus/katok_/katok/</pythonpath>
+</uwsgi>
